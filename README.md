@@ -15,11 +15,9 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 
    ```pip install flask```
 
-2. Next, you'll need a tunneling tool. I recommend ngrok. ngrok allows you to expose your local server (Flask) to the internet so that you can receive webhooks from inbound messages to your application. Instructions on how to downloan ngrok can be found [here](https://ngrok.com/download).
+2. Next, you'll need a tunneling tool. I recommend ngrok. ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks from inbound messages to the app. Instructions on how to download ngrok can be found [here](https://ngrok.com/download).
 
-   ```sh
-   echo "Hello World"
-   ```
+3. 
 
 ## Usage
 
