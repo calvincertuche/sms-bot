@@ -1,17 +1,17 @@
 # sms-bot
 
-The sms-bot is an auto-responder that likes pizza and gelato. It receives a message, checks the message for keywords, and responds based on the keywords it did or did not receive. 
+This sms-bot does an analysis of an inbound message to find keywords which trigger a response. The keywords in this version are 'pizza' and 'ice cream'.  
 
 ## Requirements
 
-- Flask
+- Flask 
 - Ngrok
 - Python 3.6+
 - Telnyx Python SDK
 
 ## Installation
 
-1. Steps to install your project.
+1. First, you'll need to install Flask. Flask is an I recommend using the latest version of Python 3. 
 1. Include commands if possible.
 
    ```sh
