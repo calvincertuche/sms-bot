@@ -6,9 +6,7 @@ The sms-bot is an auto-responder that likes pizza and gelato. It receives a mess
 
 - Flask
 - Ngrok
-- Python
-- PIP
-- Telnyx Account w/ Number
+- Python 3.6+
 - Telnyx Python SDK
 
 ## Installation
