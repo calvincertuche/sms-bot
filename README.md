@@ -11,13 +11,28 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 
 ## Installation
 
-1. First, you'll need to install [Flask](https://pypi.org/project/Flask/). Flask is a framework that will allow to handle HTTP requests. Think of it as a local server.
+1. Download this code using zip file. Save/move the unzipped folder to your desktop. 
+
+2. First, you'll need to install [Flask](https://pypi.org/project/Flask/). Flask is a framework that will allow to handle HTTP requests. Think of it as a local server.
 
    ```pip install flask```
 
-2. Next, you'll need a tunneling tool. I recommend ngrok. ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks from inbound messages to the app. Instructions on how to download ngrok can be found [here](https://ngrok.com/download).
+3. Next, you'll need a tunneling tool. I recommend ngrok. ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks from inbound messages to the app. Instructions on how to download ngrok can be found [here](https://ngrok.com/download). Once you followed the instructions to download ngrok, move the unzipped ngrok file into the sms-bot folder on your dekstop. 
 
-3. 
+3. Start up the server with your code. In your terminal, navigate to the sms-bot folder on your desktop then execute the following command:
+
+   ``` python app.py ```
+   
+   You should see a version of the following:
+   
+   ```* Serving Flask app "app" (lazy loading)
+      * Environment: production
+        WARNING: This is a development server. Do not use it in a production deployment.
+        Use a production WSGI server instead.
+      * Debug mode: off
+      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ```
+
+4. 
 
 ## Usage
 
