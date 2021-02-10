@@ -11,11 +11,11 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 
 ## Installation
 
-1. First, you'll need to install Flask. Flask is a micro web framework that will handle HTTP requests. I recommend using the latest version of Python 3.
+1. First, you'll need to install [Flask](https://pypi.org/project/Flask/). Flask is a framework that will allow to handle HTTP requests. Think of it as a local server.
 
-   ``` pip install flask ```
+   ```pip install flask```
 
-1. Include commands if possible.
+2. Next, you'll need a tunneling tool. I recommend ngrok. ngrok allows you to expose your local server (Flask) to the internet so that you can receive webhooks from inbound messages to your application. Instructions on how to downloan ngrok can be found [here](https://ngrok.com/download).
 
    ```sh
    echo "Hello World"
