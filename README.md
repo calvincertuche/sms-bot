@@ -1,6 +1,6 @@
-# Project Title
+# sms-bot
 
-Describe briefly what makes your project stand out.
+The sms-bot is an auto-responder that only likes pizza or ice cream. It will respond to an incoming message based on the contents of the inbound message. 
 
 ## Requirements
 
