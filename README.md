@@ -1,10 +1,15 @@
 # sms-bot
 
-The sms-bot is an auto-responder that only likes pizza or ice cream. It will respond to an incoming message based on the contents of the inbound message. 
+The sms-bot is an auto-responder that likes pizza and gelato. It receives a message, checks the message for keywords, and responds based on the keywords it did or did not receive. 
 
 ## Requirements
 
-- List of required tools for this project.
+- Flask
+- Ngrok
+- Python
+- PIP
+- Telnyx Account w/ Number
+- Telnyx Python SDK
 
 ## Installation
 
