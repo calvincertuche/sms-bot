@@ -47,10 +47,23 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
       Forwarding                    https://cd21a04bc202.ngrok.io -> http://localhost:5000                                                                                                                        
       Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                                                                   
                                     0       0       0.00    0.00    0.00    0.00```  
-                                       
-2. **Environment Variables:** The and fill in the TELNYX_API_KEY, TELNYX_PUBLIC_KEY, and BASE_URL with your own.
 
-Your TELNYX_API_KEY and TELNYX_PUBLIC_KEY can be found in your Telnyx account dashboard under "Apie Keys".
+
+
+
+2. **Environment Variables:** Open the .env file from the project root:
+
+    ```TELNYX_API_KEY="your_api_key"
+       TELNYX_PUBLIC_KEY="your_public_key"
+       BASE_URL=your_url
+       PORT=5000```    
+       
+Your API Key and Public Key can be found in your Telnyx account dashboard under "API Keys". Assign your API Key and Public Key between the quotes in the .env file. Grab the https forwarding address from the previous step and assign it to BASE_URL. Your .env should now resemble the following:
+
+     `TELNYX_API_KEY="KEY017789BB9F8028D3228A09981951BC12_hq8IhlQmu2KjFjDZO8pQwL"
+      TELNYX_PUBLIC_KEY="/MagzNkLjrXor4pRuZpby+gRb44zb80hUOqx5cQScDg="
+      BASE_URL=https://62ee4f1a6788.ngrok.io
+      PORT=5000` 
 
 The BASE_URL can be found from your started ngrok
 
