@@ -65,11 +65,9 @@ Your API Key and Public Key can be found in your Telnyx account dashboard under 
       BASE_URL=https://62ee4f1a6788.ngrok.io
       PORT=5000` 
 
-The BASE_URL can be found from your started ngrok
+Save the .env file. 
 
-save .env file 
-
-3. **Telnyx Messaging Profile:** Set Webhook URL in your messaging profile to the https forwarding address from ngrok. append it with /webhooks to properly tunnel it to your application when and inbound message is received. 
+3. **Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. Your Messaging Profile can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. **Important: be sure to append it the URL with `/webhooks` to properly tunnel it to your application when an inbound message is received. The resulting URL should look like: https://cd21a04bc202.ngrok.io/webhooks**
 
 ## Run Application 
 
