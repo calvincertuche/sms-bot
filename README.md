@@ -53,8 +53,9 @@ Version                       2.3.35
 Region                        United States (us)
 Web Interface                 http://127.0.0.1:4040
 Forwarding                    http://cd21a04bc202.ngrok.io -> http://localhost:5000
-Forwarding                    https://cd21a04bc202.ngrok.io -> http://localhost:5000                                                                                                                        
+Forwarding                    https://cd21a04bc202.ngrok.io -> http://localhost:5000                                                                                                                      
 Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                                                         0       0       0.00    0.00    0.00    0.00
+
 ```
 
 **Environment Variables:** Open the .env file from the project root:
