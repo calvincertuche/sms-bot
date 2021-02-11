@@ -8,7 +8,6 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 - Flask 
 - Ngrok
 
-
 ## Installation
 
 1. **Download:** Download the application code by clicking on Code -> Download ZIP. For ease, unzip the sms-bot folder and move it to your desktop. 
@@ -71,13 +70,17 @@ Save the .env file.
 
 ## Run Application 
 
-You already have your ngrok running. navigate to your project root. run 
+Open a new tab in your terminal (remember, ngrok is still running) and start the application by navigating to the project root and executing the following:
 
 ``` python app.py ```
 
-you should see the following :
+You should see a version of the following:
 
+   ``` * Serving Flask app "app" (lazy loading)
+       * Environment: production
+         WARNING: This is a development server. Do not use it in a production deployment.
+         Use a production WSGI server instead.
+       * Debug mode: off
+       * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)```
 
-
-
-that's it. send an inbound message.
+You're now ready to text your bot (Telnyx number). Give it a shot. Remember, the bot only likes pizza and ice cream. 
