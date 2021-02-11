@@ -48,9 +48,7 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
       Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                                                                   
                                     0       0       0.00    0.00    0.00    0.00```  
                                        
-2. **Environment Variables:** 
-
-Open the .env file in the sms-bot folder and fill in the TELNYX_API_KEY, TELNYX_PUBLIC_KEY, and BASE_URL with your own.
+2. **Environment Variables:** The and fill in the TELNYX_API_KEY, TELNYX_PUBLIC_KEY, and BASE_URL with your own.
 
 Your TELNYX_API_KEY and TELNYX_PUBLIC_KEY can be found in your Telnyx account dashboard under "Apie Keys".
 
@@ -58,17 +56,16 @@ The BASE_URL can be found from your started ngrok
 
 save .env file 
 
-**TElnyx**
+3. **Telnyx Messaging Profile:** Set Webhook URL in your messaging profile to the https forwarding address from ngrok. append it with /webhooks to properly tunnel it to your application when and inbound message is received. 
 
-Set Webhook URL in your messaging profile to the https forwarding address from ngrok. append it with /webhooks to properly tunnel it to your application when and inbound message is received. 
-
-**Start**
+## Run Application 
 
 You already have your ngrok running. navigate to your project root. run 
 
 ``` python app.py ```
 
 you should see the following :
+
 
 
 
