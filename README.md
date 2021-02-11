@@ -19,7 +19,7 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 pip install flask
 ```
 
-**ngrok:** In order to get HTTP requests to our application you'll need a tunneling service. Ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks and tunnel them to the application. Instructions on how to download ngrok can be found [here](https://ngrok.com/download). Once you've downloaded ngrok, move the unzipped ngrok file into the sms-bot-main folder on your desktop. 
+**ngrok:** In order to get HTTP requests to the application, you'll need a tunneling service. Ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks and tunnel them to the application. Instructions on how to download ngrok can be found [here](https://ngrok.com/download). Once you've downloaded ngrok, move the unzipped ngrok file into the sms-bot-main folder on your desktop. 
 
 **Packages/Modules:** The following packages and modules will be required to run this application. In your terminal, exexcute the install for each:
    
@@ -38,7 +38,7 @@ pip install urllib3
 
 ## Setup
 
-**ngrok:** In you terminal, navigate to the project root and launch ngrok with the following command:
+**ngrok:** In your terminal, navigate to the project root (sms-bot-main folder) and launch ngrok with the following command:
 
 ``` 
 ./ngrok http 5000
@@ -67,7 +67,7 @@ BASE_URL=your_url
 PORT=5000
 ```    
        
-Your API Key and Public Key can be found in your Telnyx account dashboard under "API Keys". Assign your API Key and Public Key between the quotes in the .env        file. Grab the https forwarding address from step #1 and assign it to BASE_URL. The PORT is set to 5000. That can be left as-is. Your .env should now resemble the following:
+Your API Key and Public Key can be found in your Telnyx account dashboard under "API Keys". Assign your API Key and Public Key between the quotes in the .env        file. Grab the https forwarding address from your ngok output above and assign it to BASE_URL. The PORT is set to 5000. That can be left as-is. Your .env file should now resemble the following:
 
 ```
 TELNYX_API_KEY="KEY017789BB9F8028D3228A09981951BC12_(shortened_for_privacy)"
@@ -84,7 +84,7 @@ Save the .env file.
 
 **Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. This can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. 
 
-*Important: be sure to append the Webhook URL with `/webhooks` to properly route it to your application when an inbound message is received. The resulting Webhook URL should look like: `https://cd21a04bc202.ngrok.io/webhooks`*
+*Important: be sure to append the Webhook URL with `/webhooks` to properly route it to your application. The resulting Webhook URL should look like: `https://cd21a04bc202.ngrok.io/webhooks`*
 
 ## Run Application 
 
@@ -105,6 +105,6 @@ You should see a version of the following:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-You're now ready to text your bot (Telnyx number)! Give it a shot. Remember, the bot only likes pizza and ice cream. 
+You're now ready to use your bot! Give it a shot. Send a message to your Telnyx number. Remember, the bot only likes pizza and ice cream. 
 
 (If you'd like to see the callbacks in real-time, simply open this url `http://localhost:4040/` in your browser.)
