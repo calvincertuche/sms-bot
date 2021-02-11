@@ -11,7 +11,7 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 
 ## Installation
 
-1. First, download the code by clicking on Code -> Download ZIP. Unzip the sms-bot folder and move it to your desktop. 
+1. *Download:* Download the application code by clicking on Code -> Download ZIP. Unzip the sms-bot folder and move it to your desktop. 
 
 2. Next, you'll need to install [Flask](https://pypi.org/project/Flask/). Flask is a framework that will allow to handle HTTP requests. Think of it as a local server.
 
