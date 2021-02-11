@@ -11,32 +11,17 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 
 ## Installation
 
-1. **Download:** The very first thing you need to do is download the application code by clicking on Code -> Download ZIP. For ease, unzip the sms-bot folder and move it to your desktop. 
+1. **Download:** Download the application code by clicking on Code -> Download ZIP. For ease, unzip the sms-bot folder and move it to your desktop. 
 
-2. **Flask:** Next, you'll need to install [Flask](https://pypi.org/project/Flask/). Flask is a framework that will allow you to handle HTTP requests. Think of it as a local server. Open your terminal and use the following script:
+2. **Flask:** Next, you'll need a framework that will allow you to handle HTTP requests. That's where [Flask](https://pypi.org/project/Flask/) comes in. In you terminal, execute the following:
 
    ```pip install flask```
 
-3. **Ngrok:** You'll need a tunneling tool next. I recommend ngrok. ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks from inbound messages and tunnel it (ha) to your application. Instructions on how to download ngrok can be found [here](https://ngrok.com/download). Once you followed the instructions to download ngrok, move the unzipped ngrok file into the sms-bot folder on your dekstop. 
+3. **ngrok:** In order to get HTTP requests to our application you'll need a tunneling service. I recommend ngrok. Ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks from inbound messages and tunnel it to our application. Instructions on how to download ngrok can be found [here](https://ngrok.com/download). Once you've downloaded ngrok, move the unzipped ngrok file into the sms-bot folder on your desktop. 
 
-3. Start up the server with your code by navigating to the sms-bot folder on your desktop then execute the following command:
-
-   ``` python app.py ```
+4. **Packages//Modules:** The following modules will be required to run this application. The installation commands are listed below. Run those in your temrinal:
    
-   You should see a version of the following:
-   
-   ```* Serving Flask app "app" (lazy loading)
-      * Environment: production
-        WARNING: This is a development server. Do not use it in a production deployment.
-        Use a production WSGI server instead.
-      * Debug mode: off
-      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) ```
-
-4. Activate your ngrok tunnel. While in your sms-bot, execute the following command:
-   
-   ```./ngrok http 5000```
-   
-5. 
+   - Telnyx Python 
 
 ## Usage
 
