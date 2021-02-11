@@ -70,15 +70,17 @@ PORT=5000
 Your API Key and Public Key can be found in your Telnyx account dashboard under "API Keys". Assign your API Key and Public Key between the quotes in the .env        file. Grab the https forwarding address from step #1 and assign it to BASE_URL. Your .env should now resemble the following:
 
 ```
-TELNYX_API_KEY="KEY017789BB9F8028D3228A09981951BC12_hq8IhlQmu2KjFjDZO8pQwL"
+TELNYX_API_KEY="KEY017789BB9F8028D3228A09981951BC12_(shortened_for_privacy)"
 TELNYX_PUBLIC_KEY="/MagzNkLjrXor4pRuZpby+gRb44zb80hUOqx5cQScDg="
-BASE_URL=https://62ee4f1a6788.ngrok.io
+BASE_URL=https://cd21a04bc202.ngrok.io
 PORT=5000
 ``` 
 
 Save the .env file. 
 
-**Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. Your Messaging Profile can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. **Important: be sure to append it the URL with `/webhooks` to properly tunnel it to your application when an inbound message is received. The resulting URL should look like: https://cd21a04bc202.ngrok.io/webhooks**
+**Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. Your Messaging Profile can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. 
+
+**Important: be sure to append the Webhook URL with `/webhooks` to properly tunnel it to your application when an inbound message is received. The resulting Webhook URL should look like: https://cd21a04bc202.ngrok.io/webhooks**
 
 ## Run Application 
 
@@ -93,8 +95,8 @@ You should see a version of the following:
 ``` 
 * Serving Flask app "app" (lazy loading)
 * Environment: production
-WARNING: This is a development server. Do not use it in a production deployment.
-Use a production WSGI server instead.
+  WARNING: This is a development server. Do not use it in a production deployment.
+  Use a production WSGI server instead.
 * Debug mode: off
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
