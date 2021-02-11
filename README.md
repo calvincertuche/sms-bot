@@ -106,4 +106,5 @@ You should see a version of the following:
 ```
 
 You're now ready to text your bot (Telnyx number). Give it a shot! Remember, the bot only likes pizza and ice cream. 
+
 (If you'd like to see the callbacks in real-time, simply open this url `http://localhost:4040/` in your browser.)
