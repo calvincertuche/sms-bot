@@ -78,6 +78,10 @@ PORT=5000
 
 Save the .env file. 
 
+**Telnyx Number:** A Telnyx number will be needed to communicate with your application. Instructions for buying one and setting it up can be found [here](https://telnyx.com/resources/purchase-a-phone-number-with-telnyx).
+
+**Note: before placing your order in the cart, be sure to select "My Telnyx Messaging Profile" from the drop-down under "Messaging Profile".**
+
 **Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. Your Messaging Profile can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. 
 
 **Important: be sure to append the Webhook URL with `/webhooks` to properly tunnel it to your application when an inbound message is received. The resulting Webhook URL should look like: `https://cd21a04bc202.ngrok.io/webhooks`**
