@@ -58,7 +58,7 @@ Connections                   ttl     opn     rt1     rt5     p50     p90       
 
 ```
 
-**Environment Variables:** Open the .env file from the project root:
+**Environment Variables:** Open the .env file in the project root from your text editor. I recommend Visual Studio but any IDE will work:
 
 ```
 TELNYX_API_KEY="your_api_key"
