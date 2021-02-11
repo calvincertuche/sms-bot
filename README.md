@@ -82,9 +82,9 @@ Save the .env file.
 
 *Note: before placing your order in the cart, be sure to select "My Telnyx Messaging Profile" from the drop-down under "Messaging Profile".*
 
-**Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. Your Messaging Profile can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. 
+**Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. This can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. 
 
-*Important: be sure to append the Webhook URL with `/webhooks` to properly tunnel it to your application when an inbound message is received. The resulting Webhook URL should look like: `https://cd21a04bc202.ngrok.io/webhooks`*
+*Important: be sure to append the Webhook URL with `/webhooks` to properly route it to your application when an inbound message is received. The resulting Webhook URL should look like: `https://cd21a04bc202.ngrok.io/webhooks`*
 
 ## Run Application 
 
@@ -105,6 +105,6 @@ You should see a version of the following:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-You're now ready to text your bot (Telnyx number). Give it a shot! Remember, the bot only likes pizza and ice cream. 
+You're now ready to text your bot (Telnyx number)! Give it a shot. Remember, the bot only likes pizza and ice cream. 
 
 (If you'd like to see the callbacks in real-time, simply open this url `http://localhost:4040/` in your browser.)
