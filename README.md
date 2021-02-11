@@ -19,9 +19,16 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 
 3. **ngrok:** In order to get HTTP requests to our application you'll need a tunneling service. I recommend ngrok. Ngrok allows you to expose your local server (Flask) to the internet. In our case, it will allow you to receive webhooks from inbound messages and tunnel it to our application. Instructions on how to download ngrok can be found [here](https://ngrok.com/download). Once you've downloaded ngrok, move the unzipped ngrok file into the sms-bot folder on your desktop. 
 
-4. **Packages//Modules:** The following modules will be required to run this application. The installation commands are listed below. Run those in your temrinal:
+4. **Packages/Modules:** The following packages and modules will be required to run this application. The installation commands are listed below. Run those in your temrinal:
    
-   - Telnyx Python 
+   - Telnyx Python SDK
+   ``` pip install telnyx ```
+   - python-dotenv
+   ``` pip install python-dotenv ```
+   - urllib
+   ```pip install urllib3 ```
+   
+5. 
 
 ## Usage
 
