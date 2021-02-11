@@ -42,7 +42,6 @@ pip install urllib3
 ``` 
 ./ngrok http 5000
 ```
-
    Port 5000 is the port defined in our enviroment variable. More on that shortly. Once ngrok is launched you will see a version of the following:
    
 ```
@@ -60,21 +59,21 @@ Connections                   ttl     opn     rt1     rt5     p50     p90       
 
 2. **Environment Variables:** Open the .env file from the project root:
 
-       ```
-       TELNYX_API_KEY="your_api_key"
-       TELNYX_PUBLIC_KEY="your_public_key"
-       BASE_URL=your_url
-       PORT=5000
-       ```    
+```
+TELNYX_API_KEY="your_api_key"
+TELNYX_PUBLIC_KEY="your_public_key"
+BASE_URL=your_url
+PORT=5000
+```    
        
    Your API Key and Public Key can be found in your Telnyx account dashboard under "API Keys". Assign your API Key and Public Key between the quotes in the .env        file. Grab the https forwarding address from step #1 and assign it to BASE_URL. Your .env should now resemble the following:
 
-     ```
-      TELNYX_API_KEY="KEY017789BB9F8028D3228A09981951BC12_hq8IhlQmu2KjFjDZO8pQwL"
-      TELNYX_PUBLIC_KEY="/MagzNkLjrXor4pRuZpby+gRb44zb80hUOqx5cQScDg="
-      BASE_URL=https://62ee4f1a6788.ngrok.io
-      PORT=5000
-               ``` 
+```
+TELNYX_API_KEY="KEY017789BB9F8028D3228A09981951BC12_hq8IhlQmu2KjFjDZO8pQwL"
+TELNYX_PUBLIC_KEY="/MagzNkLjrXor4pRuZpby+gRb44zb80hUOqx5cQScDg="
+BASE_URL=https://62ee4f1a6788.ngrok.io
+PORT=5000
+``` 
 
    Save the .env file. 
 
@@ -84,15 +83,19 @@ Connections                   ttl     opn     rt1     rt5     p50     p90       
 
 Open a new tab in your terminal (remember, ngrok is still running) and start the application by navigating to the project root and executing the following:
 
-``` python app.py ```
+``` 
+python app.py 
+```
 
 You should see a version of the following:
 
-   ``` * Serving Flask app "app" (lazy loading)
-       * Environment: production
-         WARNING: This is a development server. Do not use it in a production deployment.
-         Use a production WSGI server instead.
-       * Debug mode: off
-       * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)```
+``` 
+* Serving Flask app "app" (lazy loading)
+* Environment: production
+WARNING: This is a development server. Do not use it in a production deployment.
+Use a production WSGI server instead.
+* Debug mode: off
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
 
-You're now ready to text your bot (Telnyx number). Give it a shot. Remember, the bot only likes pizza and ice cream. 
+You're now ready to text your bot (Telnyx number). Give it a shot! Remember, the bot only likes pizza and ice cream. 
