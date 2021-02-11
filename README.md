@@ -7,6 +7,7 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 - Python 3.6+
 - Flask 
 - Ngrok
+- Telnyx [Account](https://telnyx.com/sign-up)
 
 ## Installation
 
@@ -54,12 +55,10 @@ Region                        United States (us)
 Web Interface                 http://127.0.0.1:4040
 Forwarding                    http://cd21a04bc202.ngrok.io -> http://localhost:5000
 Forwarding                    https://cd21a04bc202.ngrok.io -> http://localhost:5000                                                                                                                      
-Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                                                         0       0       0.00    0.00    0.00    0.00
-
-
+Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                           
 ```
 
-**Environment Variables:** Open the .env file in the project root from your text editor. I recommend Visual Studio but any IDE will work:
+**Environment Variables:** Open the .env file in the project root from a text editor. I recommend Visual Studio but any IDE will work:
 
 ```
 TELNYX_API_KEY="your_api_key"
