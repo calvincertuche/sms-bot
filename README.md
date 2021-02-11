@@ -42,7 +42,7 @@ pip install urllib3
 ``` 
 ./ngrok http 5000
 ```
-Port 5000 is the port defined in our enviroment variable. More on that shortly. Once ngrok is launched you will see a version of the following:
+We're using port 5000 because that's the port that is defined in our enviroment variable. More on that shortly. Once ngrok is launched you will see a version of the following:
    
 ```
 ngrok by @inconshreveable
@@ -67,7 +67,7 @@ BASE_URL=your_url
 PORT=5000
 ```    
        
-Your API Key and Public Key can be found in your Telnyx account dashboard under "API Keys". Assign your API Key and Public Key between the quotes in the .env        file. Grab the https forwarding address from step #1 and assign it to BASE_URL. Your .env should now resemble the following:
+Your API Key and Public Key can be found in your Telnyx account dashboard under "API Keys". Assign your API Key and Public Key between the quotes in the .env        file. Grab the https forwarding address from step #1 and assign it to BASE_URL. The PORT is set to 5000. That can be left as-is. Your .env should now resemble the following:
 
 ```
 TELNYX_API_KEY="KEY017789BB9F8028D3228A09981951BC12_(shortened_for_privacy)"
@@ -80,11 +80,11 @@ Save the .env file.
 
 **Telnyx Number:** A Telnyx number will be needed to communicate with your application. Instructions for buying one and setting it up can be found [here](https://telnyx.com/resources/purchase-a-phone-number-with-telnyx).
 
-**Note: before placing your order in the cart, be sure to select "My Telnyx Messaging Profile" from the drop-down under "Messaging Profile".**
+*Note: before placing your order in the cart, be sure to select "My Telnyx Messaging Profile" from the drop-down under "Messaging Profile".*
 
 **Telnyx Messaging Profile:** The final step requires that you set the 'Webhook URL' in your Messaging Profile to the same https forwarding address from ngrok. Your Messaging Profile can be found in your Telnyx account dashboard under Messaging > My Telnyx Messaging Profile > Inbound Settings. Paste in the URL under "Send a webhook to this URL:", append the URL with `/webhooks`, and hit save. 
 
-**Important: be sure to append the Webhook URL with `/webhooks` to properly tunnel it to your application when an inbound message is received. The resulting Webhook URL should look like: `https://cd21a04bc202.ngrok.io/webhooks`**
+*Important: be sure to append the Webhook URL with `/webhooks` to properly tunnel it to your application when an inbound message is received. The resulting Webhook URL should look like: `https://cd21a04bc202.ngrok.io/webhooks`*
 
 ## Run Application 
 
