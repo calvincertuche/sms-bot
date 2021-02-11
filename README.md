@@ -22,34 +22,41 @@ pip install flask
 
 4. **Packages/Modules:** The following packages and modules will be required to run this application. In your terminal, exexcute the install for each:
    
-   - Telnyx Python SDK
-   ``` pip install telnyx ```
-   - python-dotenv
-   ``` pip install python-dotenv ```
-   - urllib
-   ``` pip install urllib3 ```
+Telnyx Python SDK
+```
+pip install telnyx
+```
+python-dotenv
+```
+pip install python-dotenv
+```
+urllib
+```
+pip install urllib3
+```
 
 ## Setup
 
 1. **ngrok:** In you terminal, navigate to the project root and launch ngrok with the following command:
 
-   ``` ./ngrok http 5000 ```
+``` 
+./ngrok http 5000
+```
 
    Port 5000 is the port defined in our enviroment variable. More on that shortly. Once ngrok is launched you will see a version of the following:
    
-      ```
-      ngrok by @inconshreveable
+```
+ngrok by @inconshreveable
 
-      Session Status                online
-      Account                       Calvin Certuche (Plan: Free)
-      Version                       2.3.35
-      Region                        United States (us)
-      Web Interface                 http://127.0.0.1:4040
-      Forwarding                    http://cd21a04bc202.ngrok.io -> http://localhost:5000
-      Forwarding                    https://cd21a04bc202.ngrok.io -> http://localhost:5000                                                                                                                        
-      Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                                                                   
-                                    0       0       0.00    0.00    0.00    0.00
-                                                                             ```  
+Session Status                online
+Account                       Calvin Certuche (Plan: Free)
+Version                       2.3.35
+Region                        United States (us)
+Web Interface                 http://127.0.0.1:4040
+Forwarding                    http://cd21a04bc202.ngrok.io -> http://localhost:5000
+Forwarding                    https://cd21a04bc202.ngrok.io -> http://localhost:5000                                                                                                                        
+Connections                   ttl     opn     rt1     rt5     p50     p90                                                                                                                         0       0       0.00    0.00    0.00    0.00
+```
 
 2. **Environment Variables:** Open the .env file from the project root:
 
