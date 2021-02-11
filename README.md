@@ -22,15 +22,15 @@ pip install flask
 
 **Packages/Modules:** The following packages and modules will be required to run this application. In your terminal, exexcute the install for each:
    
-Telnyx Python SDK
+- Telnyx Python SDK
 ```
 pip install telnyx
 ```
-python-dotenv
+- python-dotenv
 ```
 pip install python-dotenv
 ```
-urllib
+- urllib
 ```
 pip install urllib3
 ```
