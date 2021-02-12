@@ -19,7 +19,7 @@ This sms-bot does an analysis of an inbound message to find keywords which trigg
 pip install flask
 ```
 
-**Packages/Modules:** The following packages and modules will be required to run this application. In your terminal, exexcute the install for each:
+**Packages/Modules:** The following packages and modules will be required to run this application. In your terminal, execute the install for each:
    
 - Telnyx Python SDK
 ```
